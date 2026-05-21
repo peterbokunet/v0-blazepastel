@@ -44,6 +44,25 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${spaceGrotesk.variable} ${firaCode.variable}`}>
       <body className="font-sans antialiased bg-background">
+        <script dangerouslySetInnerHTML={{ __html: `
+          (function() {
+            var offset = Math.floor(Math.random() * 360);
+            var root = document.documentElement;
+            var style = getComputedStyle(root);
+            var props = Array.from(document.styleSheets)
+              .flatMap(function(s) { try { return Array.from(s.cssRules) } catch(e) { return [] } })
+              .filter(function(r) { return r.selectorText === ':root' })
+              .flatMap(function(r) { return Array.from(r.style) });
+            props.forEach(function(prop) {
+              var val = style.getPropertyValue(prop).trim();
+              var m = val.match(/^oklch\\(([\\d.]+)\\s+([\\d.]+)\\s+([\\d.]+)\\)$/);
+              if (m && parseFloat(m[2]) > 0.02) {
+                var newHue = (parseFloat(m[3]) + offset) % 360;
+                root.style.setProperty(prop, 'oklch(' + m[1] + ' ' + m[2] + ' ' + newHue + ')');
+              }
+            });
+          })();
+        `}} />
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
