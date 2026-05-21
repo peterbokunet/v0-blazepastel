@@ -1,0 +1,11 @@
+1:"$Sreact.fragment"
+2:I[98924,["/_next/static/chunks/0ya5kixflpvgt.js","/_next/static/chunks/0d3tkj33oycf2.js","/_next/static/chunks/0r6jpj1aaygee.js"],"HeroSection"]
+3:I[9676,["/_next/static/chunks/0ya5kixflpvgt.js","/_next/static/chunks/0d3tkj33oycf2.js","/_next/static/chunks/0r6jpj1aaygee.js"],"BiographySection"]
+4:I[15337,["/_next/static/chunks/0ya5kixflpvgt.js","/_next/static/chunks/0d3tkj33oycf2.js","/_next/static/chunks/0r6jpj1aaygee.js"],"TimelineSection"]
+5:I[6810,["/_next/static/chunks/0ya5kixflpvgt.js","/_next/static/chunks/0d3tkj33oycf2.js","/_next/static/chunks/0r6jpj1aaygee.js"],"PascalLanguageSection"]
+6:I[55371,["/_next/static/chunks/0ya5kixflpvgt.js","/_next/static/chunks/0d3tkj33oycf2.js","/_next/static/chunks/0r6jpj1aaygee.js"],"LegacySection"]
+7:I[76841,["/_next/static/chunks/0ya5kixflpvgt.js","/_next/static/chunks/0d3tkj33oycf2.js","/_next/static/chunks/0r6jpj1aaygee.js"],"Footer"]
+8:I[97367,["/_next/static/chunks/0ya5kixflpvgt.js","/_next/static/chunks/0d3tkj33oycf2.js"],"OutletBoundary"]
+9:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","main",null,{"className":"min-h-screen","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","$L4",null,{}],["$","$L5",null,{}],["$","$L6",null,{}],["$","$L7",null,{}]]}],[["$","script","script-0",{"src":"/_next/static/chunks/0r6jpj1aaygee.js","async":true}]],["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"Q3djQ0n0PinF-pkjW3Kjs"}
+a:null
