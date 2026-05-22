@@ -2,7 +2,6 @@ name: Deploy to web8
 
 on:
   push:
-    branches: [main]
 
 jobs:
   deploy:
@@ -19,7 +18,18 @@ jobs:
 
       - run: npx next build
 
-      - name: Deploy via SFTP
+      - name: Deploy to stage
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        with:
+          server: web8.boku.net
+          username: ${{ secrets.SFTP_USER }}
+          password: ${{ secrets.SFTP_PASS }}
+          local_path: ./out/*
+          remote_path: /stage/
+          sftp_only: true
+
+      - name: Deploy to production
+        if: github.ref == 'refs/heads/main'
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
           server: web8.boku.net
