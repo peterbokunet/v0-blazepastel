@@ -45,7 +45,7 @@ export function Footer() {
               <span className="text-foreground">BlazePastel</span>;
             </p>
             <p className="pascal-comment">
-              {"{ Built with Next.js | Styled in bold pastels | Written in the spirit of Pascal }"}
+              {"{ Styled in bold pastels | Written in the spirit of Pascal }"}
             </p>
           </div>
 
